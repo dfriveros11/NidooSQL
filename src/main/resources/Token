@@ -1,0 +1,11 @@
+curl --request POST \
+  --url 'https://dfriveros11.auth0.com/oauth/token' \
+  --header 'content-type: application/json' \
+  --data '{"grant_type":"client_credentials","client_id": "GotMXPz4CeY27C2EcBpDHO6QilqxNSUL","client_secret": "rIBUy0D40MAJA7UxgkhaOU-RsU7pq8qGRPNK_oi7_KxeWa4xNew8HMUkEcmGVf0a","audience": "https://nidoo/api"}'
+
+
+
+curl -k --request GET \
+  --url https://localhost:8082/api/private \
+  --header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlF6QTNOMFkxTTBJek5VWXlSVUkzTjBRMVJqTTBRVVZCTlRRNU1UYzJORUl6T1VaQk5VTkdSQSJ9.eyJpc3MiOiJodHRwczovL2Rmcml2ZXJvczExLmF1dGgwLmNvbS8iLCJzdWIiOiJHb3RNWFB6NENlWTI3QzJFY0JwREhPNlFpbHF4TlNVTEBjbGllbnRzIiwiYXVkIjoiaHR0cHM6Ly9uaWRvby9hcGkiLCJpYXQiOjE1NDIwNDk0MDAsImV4cCI6MTU0MjEzNTgwMCwiYXpwIjoiR290TVhQejRDZVkyN0MyRWNCcERITzZRaWxxeE5TVUwiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.rLE1pOHhWw7kBxxUT6QzoayqLAhtsxTTnVyz-MQycSfLsUGB8E2ZWMJnq8IYZmRQOzPiYw75r8wFGWdgMqVXUpW5PQU9x5Li1cOm6igKD1C2p1fH_VoFD7sG2ujmnYiXl8z6Gwosm_CaZet4L06SJcRAXLiPYVwzLJvpd49kSCSOm1KJh27tWkBHFSUP8-K2oU42EHcgdIH8OlYIDVNQMRKc9P_TZapcH74uPl2mxC6hzm98dRHG7ntZWI59bqF5acs6ty4vloUdVoweWVqEkGU9WrQDEPAnUcF9_4zij53ekUACe6oK03660rLcDw6ln56BIdvmeivelCR7DM3JSQ'
+
