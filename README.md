@@ -1,8 +1,8 @@
 # NidooSQL
-Proyecto para Nidoo utilizando mysql como base de datos
+Proyect for Nidoo with mysql data base
 
 
-## Instrucciones para incializar MySQL
+## Instruction to run MySQL
 ```
 sudo docker exec -it  mysql-de-diego mysql -h localhost -P 3306 --protocol=tcp -uroot -p
 ```
